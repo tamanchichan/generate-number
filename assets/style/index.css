@@ -1,7 +1,55 @@
 @import url('./reset.css');
 
+:root {
+  --body-bg-color: #f2f4f6;
+  --button-generate-bg-color: #45db45;
+  --button-generate-color: #fff;
+  --output-bg-color: #172c2a;
+  --output-color: #fff;
+  --output-border: 1px solid #000;
+}
+
+/* HTML */
+body {
+  background-color: var(--body-bg-color);
+}
+
 /* class */
+.buttons {
+  margin-top: 15px;
+}
+
+.button-generate {
+  background-color: var(--button-generate-bg-color);
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  color: var(--button-generate-color);
+  font-size: 24px;
+  padding: 5px 10px;
+  text-shadow: 0px 0px 2px #000;
+}
+
+.center {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
+}
+
+.output {
+  background-color: var(--output-bg-color);
+  border: var(--output-border);
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  color: var(--output-color);
+  font-size: 50px;
+  height: 150px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 2px #000;
+  width: 150px;
 }
