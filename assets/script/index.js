@@ -12,6 +12,7 @@ function generateNumber() {
 }
 
 function playSoundEffect() {
+  soundEffect.currentTime = 0;
   soundEffect.play();
 }
 
