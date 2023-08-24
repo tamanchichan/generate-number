@@ -1,5 +1,7 @@
 'use strict';
 
+let click = localStorage.getItem("clicks");
+
 const output = document.querySelector('.output');
 const generateButton = document.querySelector('.button-generate');
 
@@ -17,6 +19,8 @@ function playSoundEffect() {
 }
 
 generateButton.addEventListener('click', () => {
+  click++;
+  localStorage.setItem("clicks", click);
   output.innerText = generateNumber();
   playSoundEffect();
 });
